@@ -11,8 +11,4 @@ describe("get api key", () => {
         expect(getAPIKey({ authorization: "" })).toBeNull()
         expect(getAPIKey({ authorization: "barer xxx xxx" })).toBeNull()
     })
-
-    test("force fail", () => {
-        expect(0).toBe(1)
-    }) 
 })
